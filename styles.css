@@ -1,70 +1,76 @@
 * {
-  box-sizing: border-box;
-}
-
-body {
   margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ecf0f3;
+  font-family: sans-serif;
+  outline: none;
 }
 
 .container {
-  width: 100vw;
+  background-color: black;
   height: 100vh;
-  background-color: #e8e8e8;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-
-.panel {
-  display: flex;
-  width: 300px;
-  flex-direction: column;
   align-items: center;
 }
 
-.buttons {
-  background-color: #2a2d37;
-  border-radius: 5%;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-.right {
+.calculator {
+  background-color: #ecf0f3;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: inset 5px 5px 12px white, 5px 5px 12px rgba(0, 0, 0, 0.16);
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
-.display {
-  border-radius: 20px;
-  padding: 10px 10px;
-  text-align: right;
-  position: relative;
-  height: 100px;
-  width: 100%;
-  background-color: #22252d;
-  color: white;
-  margin-bottom: 1px;
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
 }
 
-.text {
-  font-size: 20px;
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-}
-
-.btn {
-  width: 70px;
+input {
   height: 70px;
-  border-radius: 50%;
+  width: 280px;
+  background-color: #ecf0f3;
+  box-shadow: inset -5px -5px 12px white, inset 5px 5px 12px rgba(0, 0, 0, 0.16);
   border: none;
-  background-color: #282b33;
-  color: white;
-  font-size: large;
+  border-radius: 30px;
+  color: rgb(70, 70, 70);
+  font-size: 50px;
+  text-align: end;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+button {
+  height: 48px;
+  width: 48px;
+  border: none;
+  background-color: #ecf0f3;
+  box-shadow: -5px -5px 12px white, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 50%;
+  margin: 8px;
+  font-size: 16px;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.equal {
+  width: 115px;
+  border-radius: 40px;
+  background-color: #ecf0f3;
+  box-shadow: -5px -5px 12px white, 5px 5px 12px rgba(0, 0, 0, 0.16);
 }
